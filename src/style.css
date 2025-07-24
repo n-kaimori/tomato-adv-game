@@ -14,4 +14,18 @@ button {
   cursor: pointer;
 }
 
-h1{color:red}
+.area-screen {
+  text-align: center;
+}
+
+.area-screen h2 {
+  margin-bottom: 1em;
+}
+
+.area-screen .commands button {
+  margin: 0 0.5em;
+}
+
+.area-screen .message {
+  margin-top: 1em;
+}
