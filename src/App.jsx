@@ -45,7 +45,16 @@ export default function App() {
           }}
         />
       )}
-      {screen === 'result' && <ResultScreen result={result} />}
+      {screen === 'result' && (
+        <ResultScreen
+          result={result}
+          onRestart={() => {
+            setFlags({ F1: false, F2: false, F3: false })
+            setResult(null)
+            setScreen('title')
+          }}
+        />
+      )}
     </>
   )
 }
