@@ -1,9 +1,14 @@
+// jsx
 import { useState } from 'react'
 import TitleScreen from './components/TitleScreen.jsx'
 import MapScreen from './components/MapScreen.jsx'
 import AreaScreen from './components/AreaScreen.jsx'
 import ChoiceScreen from './components/ChoiceScreen.jsx'
 import ResultScreen from './components/ResultScreen.jsx'
+// style
+import './destyle.css';
+import './style.css';
+
 
 export default function App() {
   const [screen, setScreen] = useState('title')
