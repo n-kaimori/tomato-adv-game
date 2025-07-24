@@ -60,3 +60,28 @@ button {
 .map-screen .choice-button {
   margin-top: 2em;
 }
+
+/*ResultScreen ーーーーーーーーーーーーーーーー*/
+.result-screen {
+  text-align: center;
+}
+
+.result-screen h2 {
+  margin-bottom: 1em;
+}
+
+.result-message {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.restart-button {
+  margin-top: 2em;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: #ff7f7f;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
