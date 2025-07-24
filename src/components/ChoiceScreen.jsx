@@ -1,6 +1,8 @@
+import '../style.css'
+
 export default function ChoiceScreen({ onSelect }) {
   return (
-    <div style={{ textAlign: 'center' }}>
+    <div className="choice-screen">
       <h2>選ぶならどのトマト？</h2>
       <button onClick={() => onSelect('ジューシートマト')}>ジューシートマト</button>
       <button onClick={() => onSelect('スイートトマト')}>スイートトマト</button>
