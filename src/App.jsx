@@ -6,7 +6,7 @@ export default function App() {
     <h2 style={{ textAlign: "center", marginTop: "40vh" }}>🚀 Game Screen (あとでCanvasを入れる)</h2>
   ) : (
     <div style={{ textAlign: "center", marginTop: "40vh" }}>
-      <h1>Dental Guardian</h1>
+      <h1>Tomato ADV</h1>
       <button onClick={() => setStart(true)}>START</button>
     </div>
   );
