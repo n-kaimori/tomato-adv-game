@@ -85,3 +85,14 @@ button {
   font-size: 16px;
   cursor: pointer;
 }
+
+/*TitleScreen ーーーーーーーーーーーーーーーー*/
+.title-screen {
+  text-align: center;
+  padding: 2em;
+}
+
+.title-screen h1 {
+  font-size: 1.8em;
+  margin-bottom: 1.5em;
+}
