@@ -6,5 +6,5 @@ export default function MapScreen({ onSelectArea }) {
       <button onClick={() => onSelectArea('市場')}>市場</button>
       <button onClick={() => onSelectArea('厨房')}>厨房</button>
     </div>
-  );
+  )
 }
