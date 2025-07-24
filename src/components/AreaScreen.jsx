@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import '../style.css'
 
 const scenarios = {
   畑: {
@@ -34,14 +35,14 @@ export default function AreaScreen({ area, onBack, onSetFlag, flags }) {
   }
 
   return (
-    <div style={{ textAlign: 'center' }}>
+    <div className="area-screen">
       <h2>{area}を調査中</h2>
-      <div>
+      <div className="commands">
         <button onClick={() => handleCommand('みる')}>みる</button>
         <button onClick={() => handleCommand('はなす')}>はなす</button>
         <button onClick={() => handleCommand('しらべる')}>しらべる</button>
       </div>
-      <p style={{ marginTop: '1em' }}>{message}</p>
+      <p className="message">{message}</p>
       <button onClick={onBack}>← マップへ戻る</button>
     </div>
   )
