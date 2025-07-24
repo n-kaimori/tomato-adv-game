@@ -43,3 +43,20 @@ button {
 .choice-screen button {
   margin: 0.5em;
 }
+
+/* MapScreen ーーーーーーーーーーーーーーーー*/
+.map-screen {
+  text-align: center;
+}
+
+.map-screen h2 {
+  margin-bottom: 1em;
+}
+
+.map-screen button {
+  margin: 0.5em;
+}
+
+.map-screen .choice-button {
+  margin-top: 2em;
+}
