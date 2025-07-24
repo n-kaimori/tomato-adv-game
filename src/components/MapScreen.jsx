@@ -1,12 +1,10 @@
-export default function MapScreen() {
+export default function MapScreen({ onSelectArea }) {
   return (
-    <div style={{ textAlign: 'center', padding: '2em' }}>
-      <h2>調査する場所を選ぼう</h2>
-      <ul>
-        <li>畑</li>
-        <li>市場</li>
-        <li>厨房</li>
-      </ul>
+    <div style={{ textAlign: 'center' }}>
+      <h2>どこを調査する？</h2>
+      <button onClick={() => onSelectArea('畑')}>畑</button>
+      <button onClick={() => onSelectArea('市場')}>市場</button>
+      <button onClick={() => onSelectArea('厨房')}>厨房</button>
     </div>
-  )
+  );
 }
