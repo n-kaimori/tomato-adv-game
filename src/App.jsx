@@ -1,14 +1,14 @@
-import { useState } from "react";
-import './style.css'
+import { useState } from 'react'
+import TitleScreen from './components/TitleScreen.jsx'
+import MapScreen from './components/MapScreen.jsx'
 
 export default function App() {
-  const [start, setStart] = useState(false);
-  return start ? (
-    <h2 style={{ textAlign: "center", marginTop: "40vh" }}>🚀 Game Screen (あとでCanvasを入れる)</h2>
-  ) : (
-    <div style={{ textAlign: "center", marginTop: "40vh" }}>
-      <h1>Tomato ADV</h1>
-      <button onClick={() => setStart(true)}>START</button>
-    </div>
-  );
+  const [screen, setScreen] = useState('title')
+
+  return (
+    <>
+      {screen === 'title' && <TitleScreen onStart={() => setScreen('map')} />}
+      {screen === 'map' && <MapScreen />}
+    </>
+  )
 }
